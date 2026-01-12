@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ucp-merchant:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
