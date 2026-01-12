@@ -34,7 +34,7 @@ PRODUCTS = {
     "pudding-theory-pdf": {
         "id": "pudding-theory-pdf",
         "name": "Pudding Theory: A Guide to Warping Reality",
-        "description": "The complete Pudding Theory framework - consciousness, probability, and reality manipulation. Free PDF download.",
+        "description": "A science paper using quantum mechanics and probability theory to argue we exist in a soft simulation. Free PDF download.",
         "price": 0,
         "currency": "USD",
         "type": "digital",

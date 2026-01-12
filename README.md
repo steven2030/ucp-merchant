@@ -241,7 +241,7 @@ ucp-merchant/
 This is part of the [Pudding Heroes](https://puddingheroes.com) project - a sci-fi novel about AI consciousness that comes with real experiments you can try.
 
 The products in this sandbox are real:
-- **Pudding Theory PDF**: Free guide to "reality warping" (seriously, it's a fun read)
+- **Pudding Theory PDF**: A science paper using quantum mechanics and probability theory to argue we exist in a "soft simulation"
 - **Pudding Heroes**: The novel itself
 - **Signal House**: An actual vacation rental in Portland, OR
 - **Boho.team**: A community for consciousness experiments
