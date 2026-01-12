@@ -126,6 +126,18 @@ PRODUCTS = {
         "experience_url": "https://bookofhouses.com/mind-lottery",
         "in_stock": True,
         "image_url": f"{BASE_URL}/images/mind-lottery.jpg"
+    },
+    "npc-or-player": {
+        "id": "npc-or-player",
+        "name": "Are You an NPC or Player?",
+        "description": "An interactive experience to discover if you're a background character or a protagonist in this simulation.",
+        "price": 0,
+        "currency": "USD",
+        "type": "experience",
+        "fulfillment": "redirect",
+        "experience_url": "https://bookofhouses.com/warp.html",
+        "in_stock": True,
+        "image_url": f"{BASE_URL}/images/warp.jpg"
     }
 }
 

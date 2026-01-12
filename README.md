@@ -60,6 +60,7 @@ The sandbox is live at **puddingheroes.com**:
 | `signal-house-weekend` | $550 | Booking | Fake confirmation |
 | `boho-membership` | FREE | Subscription | Fake account creation |
 | `mind-lottery` | FREE | Experience | **Real redirect to game** |
+| `npc-or-player` | FREE | Experience | **Real redirect to simulation test** |
 
 Free items are actually delivered. Everything else returns sandbox responses.
 

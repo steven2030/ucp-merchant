@@ -318,3 +318,4 @@ Errors return appropriate HTTP status codes with JSON bodies:
 | `signal-house-weekend` | Signal House - Weekend | $550 | Booking |
 | `boho-membership` | Boho.team Membership | FREE | Subscription |
 | `mind-lottery` | Mind Lottery Experience | FREE | Experience |
+| `npc-or-player` | Are You an NPC or Player? | FREE | Experience |
