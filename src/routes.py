@@ -2,7 +2,7 @@
 UCP (Universal Commerce Protocol) API Routes
 Sandbox implementation for AI agent commerce testing
 
-GitHub: https://github.com/pudding-heroes/ucp-merchant
+GitHub: https://github.com/steven2030/ucp-merchant
 Live: https://puddingheroes.com/api/ucp/
 """
 
@@ -163,7 +163,7 @@ def discovery():
             "note": "Sandbox mode accepts any token starting with 'sandbox_' or the literal 'test'."
         },
         "documentation": {
-            "github": "https://github.com/pudding-heroes/ucp-merchant",
+            "github": "https://github.com/steven2030/ucp-merchant",
             "api_docs": f"{BASE_URL}/api/ucp/docs"
         }
     })
@@ -432,7 +432,7 @@ def docs():
             "GET /api/ucp/test": "Quick test - creates sample order"
         },
         "free_products": ["pudding-theory-pdf", "mind-lottery", "boho-membership"],
-        "github": "https://github.com/pudding-heroes/ucp-merchant"
+        "github": "https://github.com/steven2030/ucp-merchant"
     })
 
 

@@ -6,6 +6,7 @@ Test your AI shopping agents against a real merchant sandbox with real products.
 
 [![Live Sandbox](https://img.shields.io/badge/sandbox-live-brightgreen)](https://puddingheroes.com/api/ucp/health)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/github/stars/steven2030/ucp-merchant?style=social)](https://github.com/steven2030/ucp-merchant)
 
 ## Quick Start
 
@@ -139,7 +140,7 @@ curl -X POST https://puddingheroes.com/api/ucp/checkout \
 ### With Docker
 
 ```bash
-git clone https://github.com/pudding-heroes/ucp-merchant.git
+git clone https://github.com/steven2030/ucp-merchant.git
 cd ucp-merchant
 docker-compose up
 # API available at http://localhost:5000/api/ucp/
@@ -148,7 +149,7 @@ docker-compose up
 ### Without Docker
 
 ```bash
-git clone https://github.com/pudding-heroes/ucp-merchant.git
+git clone https://github.com/steven2030/ucp-merchant.git
 cd ucp-merchant
 python -m venv venv
 source venv/bin/activate
