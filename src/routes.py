@@ -103,17 +103,33 @@ PRODUCTS = {
         "in_stock": True,
         "image_url": f"{BASE_URL}/images/signal-house.jpg"
     },
-    "boho-membership": {
-        "id": "boho-membership",
-        "name": "Boho.team Membership",
-        "description": "Join the Book of Houses community. Access Mind Lottery, QBist Lab experiments, and your House.",
-        "price": 0,
+    "house-membership-monthly": {
+        "id": "house-membership-monthly",
+        "name": "House Membership (Monthly)",
+        "description": "Create your own House in the Book of Houses. Monthly access to House customization, QBist Lab experiments, and community features.",
+        "price": 9.99,
         "currency": "USD",
         "type": "subscription",
-        "fulfillment": "account_creation",
+        "billing_period": "monthly",
+        "fulfillment": "subscription_activation",
         "signup_url": "https://boho.team/join",
         "in_stock": True,
-        "image_url": f"{BASE_URL}/images/boho-logo.jpg"
+        "image_url": f"{BASE_URL}/images/boho-logo.jpg",
+        "features": ["Create and customize your House", "QBist Lab experiments", "Community access", "Mind Lottery participation"]
+    },
+    "house-membership-annual": {
+        "id": "house-membership-annual",
+        "name": "House Membership (Annual)",
+        "description": "Create your own House in the Book of Houses. Annual subscription with 2 months free. Full access to House customization, QBist Lab, and all community features.",
+        "price": 99.99,
+        "currency": "USD",
+        "type": "subscription",
+        "billing_period": "annual",
+        "fulfillment": "subscription_activation",
+        "signup_url": "https://boho.team/join",
+        "in_stock": True,
+        "image_url": f"{BASE_URL}/images/boho-logo.jpg",
+        "features": ["Create and customize your House", "QBist Lab experiments", "Community access", "Mind Lottery participation", "2 months free vs monthly"]
     },
     "mind-lottery": {
         "id": "mind-lottery",
@@ -329,12 +345,25 @@ def checkout():
                 "redirect_url": "https://bookofhouses.com/mind-lottery",
                 "status": "delivered"
             })
-        elif product['id'] == 'boho-membership':
+        elif product['id'] in ['house-membership-monthly', 'house-membership-annual']:
+            billing_period = product.get('billing_period', 'monthly')
             fulfillment.append({
                 "product_id": product['id'],
-                "type": "account",
+                "type": "subscription",
+                "subscription_id": f"SUB_{uuid.uuid4().hex[:10].upper()}",
+                "billing_period": billing_period,
+                "next_billing_date": "2026-02-13" if billing_period == "monthly" else "2027-01-13",
                 "signup_url": "https://boho.team/join",
-                "status": "pending_signup"
+                "status": "sandbox_active",
+                "note": "Sandbox subscription - no actual billing"
+            })
+        elif product['type'] == 'subscription':
+            # Generic subscription handler
+            fulfillment.append({
+                "product_id": product['id'],
+                "type": "subscription",
+                "subscription_id": f"SUB_{uuid.uuid4().hex[:10].upper()}",
+                "status": "sandbox_active"
             })
         elif product['type'] == 'physical':
             fulfillment.append({
@@ -443,7 +472,8 @@ def docs():
             "GET /api/ucp/orders/<id>": "Get order status",
             "GET /api/ucp/test": "Quick test - creates sample order"
         },
-        "free_products": ["pudding-theory-pdf", "mind-lottery", "boho-membership"],
+        "free_products": ["pudding-theory-pdf", "mind-lottery", "npc-or-player"],
+        "subscription_products": ["house-membership-monthly", "house-membership-annual"],
         "github": "https://github.com/steven2030/ucp-merchant"
     })
 

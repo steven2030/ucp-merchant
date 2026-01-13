@@ -58,11 +58,12 @@ The sandbox is live at **puddingheroes.com**:
 | `pudding-heroes-hardcover` | $24.99 | Physical | Fake tracking number |
 | `signal-house-1night` | $250 | Booking | Fake confirmation |
 | `signal-house-weekend` | $550 | Booking | Fake confirmation |
-| `boho-membership` | FREE | Subscription | Fake account creation |
+| `house-membership-monthly` | $9.99/mo | Subscription | Fake subscription activation |
+| `house-membership-annual` | $99.99/yr | Subscription | Fake subscription activation |
 | `mind-lottery` | FREE | Experience | **Real redirect to game** |
 | `npc-or-player` | FREE | Experience | **Real redirect to simulation test** |
 
-Free items are actually delivered. Everything else returns sandbox responses.
+Free items are actually delivered. Subscriptions return sandbox billing details with next billing date. Everything else returns sandbox responses.
 
 ## Usage Examples
 
