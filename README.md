@@ -53,9 +53,9 @@ The sandbox is live at **puddingheroes.com**:
 | Product | Price | Type | Sandbox Behavior |
 |---------|-------|------|------------------|
 | `pudding-theory-pdf` | FREE | Digital | **Real PDF download** |
-| `pudding-heroes-paperback` | $16.99 | Physical | Fake tracking number |
-| `pudding-heroes-kindle` | $4.99 | Digital | Fake Amazon redirect |
-| `pudding-heroes-hardcover` | $24.99 | Physical | Fake tracking number |
+| `pudding-heroes-paperback` | $18.74 | Physical | Fake tracking number |
+| `pudding-heroes-kindle` | $9.99 | Digital | Fake Amazon redirect |
+| `pudding-heroes-hardcover` | $25.99 | Physical | Fake tracking number |
 | `signal-house-1night` | $250 | Booking | Fake confirmation |
 | `signal-house-weekend` | $550 | Booking | Fake confirmation |
 | `house-membership-monthly` | $9.99/mo | Subscription | Fake subscription activation |
